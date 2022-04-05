@@ -1,40 +1,5 @@
 import React from 'react'
-
-
-const SlotM = (props) => {
-// let x = '😊';
-// let y = '😊';
-// let z = '😒';
-
-if(props.x===props.y && props.y===props.z){
-    return(
-        <>
-        <div className='slot_inner'>
-            <h1>
-                
-                {props.x} {props.y} {props.z} 
-            </h1>
-            <h1> This is Matching. </h1>
-            <hr />
-        </div>
-        </>
-    )
-}else{
-    return(
-        <>
-        <div className='slot_inner'>
-            <h1>
-                
-                {props.x} {props.y} {props.z} 
-            </h1>
-            <h1> This is Not Matching. </h1>
-            <hr />
-        </div>
-        </>
-    )
-}
-} 
-
+import SlotMac from './SlotMac'
 
 const App = () => {
   return (
@@ -44,13 +9,13 @@ const App = () => {
         <span style={{ fontWeight: "bold" }}>Slot Machine Game</span>
     </h1>
    <div className='slotmachine'>
-    <SlotM x="😊"  y="😊" z="😊"/>
+    <SlotMac x="😊"  y="😊" z="😊"/>
     <hr />
-    <SlotM x="😍"  y="💕" z="😉"/>
+    <SlotMac x="😍"  y="💕" z="😉"/>
     <hr />
-    <SlotM x="😜"  y="😢" z="😊"/>
+    <SlotMac x="😜"  y="😢" z="😊"/>
     <hr />
-    <SlotM x="😁"  y="😁" z="😁"/>
+    <SlotMac x="😁"  y="😁" z="😁"/>
     </div>
     </>
   )
