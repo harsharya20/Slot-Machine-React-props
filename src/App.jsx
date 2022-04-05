@@ -8,7 +8,7 @@ const App = () => {
         Welcome to { " "}
         <span style={{ fontWeight: "bold" }}>Slot Machine Game</span>
     </h1>
-   <div className='slotmachine'>
+   <div className='slotMachine'>
     <SlotMac x="😊"  y="😊" z="😊"/>
     <hr />
     <SlotMac x="😍"  y="💕" z="😉"/>
